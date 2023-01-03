@@ -130,3 +130,6 @@ dmypy.json
 
 # dont add data folder
 /data
+
+# dont sync private data
+private.txt
