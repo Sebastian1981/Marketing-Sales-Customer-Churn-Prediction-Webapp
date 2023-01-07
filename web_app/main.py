@@ -10,7 +10,11 @@ def main():
 
     if choice == "About":
         st.subheader("About")
-        st.markdown(Path('/app/marketing-sales-customer-churn-prediction-webapp/web_app/About.md').read_text())
+        # depending on deployment i.e. local, docker or streamlit clout try different paths
+        try:
+            st.markdown(Path('About.md').read_text())
+        except:
+            st.markdown(Path('/app/marketing-sales-customer-churn-prediction-webapp/web_app/About.md').read_text())
     
     elif choice == "Churn Prediction":
         st.subheader('Predict Churn')
