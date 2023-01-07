@@ -12,7 +12,7 @@ def main():
 
     if choice == "About":
         st.subheader("About")
-        st.markdown(Path('\web_app\About.md').read_text())
+        st.markdown(Path('.\web_app\About.md').read_text())
     
     elif choice == "Churn Prediction":
         st.subheader('Predict Churn')
