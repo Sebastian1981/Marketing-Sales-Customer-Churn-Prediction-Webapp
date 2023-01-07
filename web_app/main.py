@@ -1,9 +1,10 @@
 import streamlit as st
 from path import Path
 import os
-
-#from utils import convert_df
 from scoring_app import run_scoring_app
+
+
+print('current directory: ',os.getcwd())
 
 def main():
     st.title("Your Marketing App for Customer´s Churn Prediction!")
@@ -13,7 +14,6 @@ def main():
 
     if choice == "About":
         st.subheader("About")
-        print('current directory: ',os.getcwd())
         st.markdown(Path('.\web_app\About.md').read_text())
     
     elif choice == "Churn Prediction":
