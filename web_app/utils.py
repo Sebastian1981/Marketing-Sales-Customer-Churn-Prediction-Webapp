@@ -88,8 +88,12 @@ def hotencode_df(df:pd.DataFrame, numeric_columns, categorical_columns)->pd.Data
     """hotencode data frame"""
 
     # load one-hot encoder
-    with open('enc.pickle', 'rb') as filename: # trained one hot encoder
-        enc = pickle.load(filename)
+    try:
+        with open('enc.pickle', 'rb') as filename: # trained one hot encoder
+            enc = pickle.load(filename)
+    except:
+        with open('/app/marketing-sales-customer-churn-prediction-webapp/web_app/enc.pickle', 'rb') as filename: 
+            enc = pickle.load(filename)
 
     # one hot encoding categorical features
     df_cat_hotenc = pd.DataFrame(
@@ -106,9 +110,13 @@ def predict_cluster(df:pd.DataFrame, numeric_columns, categorical_columns)->pd.D
     """predict clusters given df the its hotencoded version"""
 
     # load trained cluster model
-    with open('model.pickle', 'rb') as filename: # trained random forest classifier
-        model = pickle.load(filename)
-        
+    try:
+        with open('model.pickle', 'rb') as filename: # trained random forest classifier
+            model = pickle.load(filename)
+    except:
+        with open('/app/marketing-sales-customer-churn-prediction-webapp/web_app/model.pickle', 'rb') as filename: 
+            model = pickle.load(filename)
+
     # hotencode features
     df_hotenc = hotencode_df(df, numeric_columns, categorical_columns)
     
