@@ -158,4 +158,4 @@ Based on the marketing engagement prediction model a web app was developed and d
 <img src="images/webapp_screenshot.jpg" 
 width="800" 
 style="object-fit: contain;">
-<p style="text-align:center;"><strong>Screenshot of the Churn Predictio App.</strong></p>
+<p style="text-align:center;"><strong>Screenshot of the Churn Prediction App.</strong></p>
