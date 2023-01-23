@@ -35,19 +35,18 @@ The goal of this project is to
 2. evaluate the churn prediction model,
 3. implement web app using streamlit
 3. transform web app into highly efficient software using Docker
-4. deployed model in streamlit cloud: [streamlit cloud](https://sebastian1981-marketing-sales-customer-churn-web-appmain-sps62o.streamlit.app/)
+4. deploy model in [streamlit cloud](https://sebastian1981-marketing-sales-customer-churn-web-appmain-sps62o.streamlit.app/)
  
 <br>
 
 ## **Solution Approach:**  
-The project is developed according to the well-known CRISP-DM
-[CRISP-DM Model](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining).
+The project is developed according to the well-known [CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) Model.
 
 <img src="images/crisp_dm.png" 
 width="400" 
 style="object-fit: contain;">
 
-- "Business Understanding", "Data Understanding", "Data Preparation", "Modeling" & "Evaluation": see Jupyter Notebook "/experiment/01_bank_customer_conversion_prediction_poc.ipynb". 
+- The steps "Business Understanding", "Data Understanding", "Data Preparation", "Modeling" & "Evaluation" are implemented in this [Jupyter Notebook]("/experiment/01_bank_customer_conversion_prediction_poc.ipynb") . 
 - "Deployment": see Jupyter Notebook "/experiment/02_bank_customer_conversion_prediction_scoring_pipeline.ipynb" and "/web_app". 
 
 <br>
