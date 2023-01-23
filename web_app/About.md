@@ -1,2 +1,7 @@
 
-The purpose of this AI project is to predict the risk that individuals will default on their loan repayments. The basis for this is freely accessible data from the Internet. This web application allows the user to visualize the underlying data with simple menu navigation, and then to train and evaluate machine learning models. In addition, an approach from game theory was implemented here to make model decisions transparent by visualizing the so-called Shapley values.
+**Motivation:**  
+Predicting churn using machine learning is very useful because it allows businesses to identify customers who are likely to leave, so that they can take proactive steps to prevent them from doing so. This can help businesses retain more customers, increase customer loyalty, and improve customer satisfaction. Additionally, it can help businesses better understand customer behavior, allowing them to make more informed decisions about their products and services. 
+
+**Instructions:**  
+- upload csv file of the same type as the training data
+- download csv file with the colums "churn probability" and "churn" added

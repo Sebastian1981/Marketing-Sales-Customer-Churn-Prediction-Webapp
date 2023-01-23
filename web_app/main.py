@@ -3,7 +3,7 @@ from path import Path
 from scoring_app import run_scoring_app
 
 def main():
-    st.title("Your Marketing App for Customer´s Churn Prediction!")
+    st.title("Demo App for for Customer´s Churn Prediction!")
 
     menu = ["About", "Churn Prediction"]
     choice = st.sidebar.selectbox("Menu", menu)
